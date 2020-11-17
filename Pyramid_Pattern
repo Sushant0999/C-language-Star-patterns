@@ -1,0 +1,42 @@
+#include <stdio.h>
+//created by Sushant0999
+
+      
+/*       5
+        555     
+       55555    
+      5555555   
+     555555555  
+    55555555555 
+   5555555555555
+  555555555555555
+ 55555555555555555  */
+
+int main()
+{
+  char x;
+  int a,i,j;
+  printf("STAR PYRAMID\n₹,$,∆,π not allowed\n");
+  printf("Enter The Character To Print\n");
+  scanf("%c",&x);
+  printf("Enter Number Of Rows\n");
+  scanf("%d",&a);
+  //itreat through rows 
+  for(i=1;i<=a;i++)
+  { 
+    //print leading space
+    for(j=i;j<=a;j++)
+    {
+      printf(" ");
+    }
+    //print the pattern. 
+    for(j=1;j<=2*i-1;j++)
+    {
+      printf("%c",x);
+    } 
+    //move to next line
+      printf("\n");
+   
+  }
+  return 0;
+}
